@@ -6,7 +6,13 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, Julia!");
+            Console.WriteLine("What is your name?");
+            string UserName = Console.ReadLine();
+            //Console.WriteLine("Hello, " + UserName + "!");
+
+            //string interpolation
+            Console.WriteLine($"Hello, {UserName}!");
+
             Console.Read();
         }
     }
